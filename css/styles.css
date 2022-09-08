@@ -49,7 +49,7 @@ nav{
     padding: 16px 19px;
 }
 
-.nav-links li a.hover{
-    background-color: cyan;
+.nav-links li a:hover{
+    color: rgb(255, 0, 47);
 }
 
