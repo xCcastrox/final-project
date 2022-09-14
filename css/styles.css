@@ -15,18 +15,23 @@
 }
 
 nav{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 7vh;
+    min-height: 6vh;
     background-color: slateblue;
     font-family: 'cinzel', Times, serif;
+    padding: .5em;
 }
 
 .nav-links{
     display: flex;
     justify-content: space-around;
-    width: 40%;
+    width: 35%;
 }
 
 .nav-links li {
@@ -41,7 +46,7 @@ nav{
 }
 
 .nav-links a{
-    color: darkslategrey;
+    color: rgb(25, 67, 67);
     text-decoration: none;
     letter-spacing: 4px;
     font-weight: bold;
@@ -50,6 +55,96 @@ nav{
 }
 
 .nav-links li a:hover{
-    color: rgb(255, 0, 47);
+    color: rgb(31, 206, 119);
+    transition: 0.3s ease-in-out;
+   
 }
 
+body,html{
+    margin: 10px;
+    background-image: url(/img/image0000001.jpeg);
+    height: 50%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.footer-container{
+    background-color:none;
+    padding:16px 19px
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    min-height: 7vh;
+    background-color:rgb(10, 9, 11);
+    color: darkslategrey;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin:0 auto
+}
+
+.footer-heading{
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+    letter-spacing: 6px;
+}
+
+.footer-heading h2{
+    margin-bottom:2rem;
+    letter-spacing: 10px;
+
+}
+
+.footer-heading a{
+    color: darkslategrey;
+    text-decoration: none;
+    margin-bottom: .6rem;
+}
+
+.footer-heading a:hover{
+    color: rgb(255, 0, 47);
+    transition: .3s ease-in-out;
+}
+
+.footer-email-form h2{
+    margin-bottom: 2rem;
+}
+
+#footer-email{
+    width: 219px;
+    height: 18px;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    padding-left: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    justify-content: right;
+}
+
+#footer-email::placeholder{
+    color: chocolate;
+}
+
+#footer-email-btn{
+    width: 70px;
+    height: 20px;
+    background-color: darkorange;
+    outline: none;
+    border: none;
+    color: darkslategrey;
+    font-size: 1rem;
+}
+
+#footer-email-btn:hover{
+    cursor: pointer;
+    background-color: slateblue;
+    transition:all .3s ease-in-out
+}
