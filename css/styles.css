@@ -1,17 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yomogi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Yomogi&display=swap');
 *{
     margin:0px;
     padding: 0px;
     box-sizing: border-box;
 
 }
+
+body, html{
+    height: 100%;
+    
+}
+body{
+    background-image: linear-gradient(to bottom right, #dee2ff, #cda55a);
+}
 .body-text{
     display: flex;
     font-family: 'Times New Roman', Times, serif;
     align-items: center;
     justify-content: center;
-    margin-top: 250px;
+    margin: 75px;
+}
+
+p {
+    font-family: 'Yomogi', cursive;
+    color: #dee2ff;
+}
+
+h1,h2 {
+    font-family: 'Cinzel', serif;
+    color: #6a5acd;
+}
+
+.column{
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .column {
+        width: 100%;
+    }
 }
 
 nav{
@@ -23,7 +61,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     min-height: 6vh;
-    background-color: slateblue;
+    background-color: #6a5acd;
     font-family: 'cinzel', Times, serif;
     padding: .5em;
 }
@@ -37,12 +75,31 @@ nav{
 .nav-links li {
     list-style: none;
 }
-
+header{
+    height: 40px;
+}
 .heading{
-    color: chocolate;
+    color: #fbe698;
     text-transform: uppercase;
     letter-spacing: 20px;
     font-size: 40px;
+}
+
+#section-services_column{
+    width: 65%;
+}
+.border {
+    border: 0.5px solid black;
+    border-radius: 5px;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo {
+    float: left;
+    height: 200px;
 }
 
 .nav-links a{
@@ -53,6 +110,45 @@ nav{
     font-size: 16px;
     padding: 16px 19px;
 }
+button{
+    width: 70px;
+    height: 20px;
+    background-color: darkorange;
+    outline: none;
+    color: darkslategrey;
+    font-size: .7rem;
+}
+label,input,textarea{
+    margin: 5px;
+    display: block;
+    text-align: left;
+    font-family: 'Montserrat',sans-serif;
+}
+
+input,textarea{
+    width: 80%;
+}
+
+.contact-form{
+    background-color: #454f90;
+    height: 300px;
+    width: 500px;
+    border: solid yellowgreen .25px;
+    border-radius: 8px;
+}
+.col {
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+    float: left;
+}
+.form-row {
+    margin-bottom: 15px;
+}
+textarea {
+    height: 100px;
+
+}
 
 .nav-links li a:hover{
     color: rgb(31, 206, 119);
@@ -60,9 +156,9 @@ nav{
    
 }
 
-body,html{
+.hero{
     margin: 10px;
-    background-image: url(/img/image0000001.jpeg);
+    background-image: url("/img/image0000001.jpeg");
     height: 50%;
     background-position: center;
     background-size: cover;
@@ -70,13 +166,54 @@ body,html{
     background-attachment: fixed;
 }
 
+.main-col{
+    float: left;
+    width: 50%;
+    padding: 20px;
+    text-align: left;
+}
+ .sidebar-col{
+    color: #fff;
+    float: right;
+    width: 50%;
+    padding:20px;
+    text-align: right;
+ }
+
+ .billboard{
+    background-color: #90733f;
+    text-align: center;
+    padding: 5px;
+ }
+
+ .left-col,.right-col {
+background-color: #459082;
+float: left;
+width: 25%;
+padding: 10px;
+ }
+ .center-col {
+    background-color: #584a90;
+    float: left;
+    width: 50%;
+    padding: 30px;
+ }
+
 .footer-container{
     background-color:none;
     padding:16px 19px
 }
+/* .footer-left{
+    float: left;
+    margin-left: 100px;
+}
+.footer-email-form{
+    float: right;
+    margin-right: 100px;
+} */
 
 .footer{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -95,7 +232,11 @@ body,html{
     margin-right: 2rem;
     letter-spacing: 6px;
 }
-
+.fa-brands{
+    font-size: 20px;
+    margin: 10px;
+    color: #dee2ff;
+}
 .footer-heading h2{
     margin-bottom:2rem;
     letter-spacing: 10px;
@@ -147,4 +288,7 @@ body,html{
     cursor: pointer;
     background-color: slateblue;
     transition:all .3s ease-in-out
+}
+.clearfix{
+    clear: both;
 }
