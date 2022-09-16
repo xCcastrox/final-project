@@ -38,6 +38,7 @@ h1,h2 {
     float: left;
     width: 33.33%;
     padding: 10px;
+    background-color: #459082;
 }
 
 .row::after {
@@ -99,7 +100,7 @@ header{
 
 .logo {
     float: left;
-    height: 200px;
+    height: 150px;
 }
 
 .nav-links a{
@@ -183,7 +184,7 @@ textarea {
  .billboard{
     background-color: #90733f;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
  }
 
  .left-col,.right-col {
