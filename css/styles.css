@@ -159,7 +159,7 @@ textarea {
 
 .hero{
     margin: 10px;
-    background-image: url("img/image0000001.jpeg");
+    background-image: url("/img/image0000001.jpeg");
     height: 50%;
     background-position: center;
     background-size: cover;
